@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Hind+Guntur:wght@300;400;500;600;700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+.font-alegreya {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.sous-titre {
+  @apply mb-4 font-trirong text-base font-semibold tracking-widest md:text-lg xl:text-xl;
+}
+
+p {
+  @apply mb-3;
+}
+
+.button {
+  @apply mt-10 h-14 w-32 font-expletus_sans md:w-36;
+  &-blue {
+    @apply h-full w-full py-4 border-2 border-solid border-blue-100 text-center text-sm md:py-3 md:text-base hover:bg-blue-100;
+  }
+  &-green {
+    @apply h-full w-full py-4 border-2 border-solid border-green-500 text-center text-sm md:py-3 md:text-base hover:bg-green-500 hover:text-white;
+  }
+}
+
+.reserve {
+  @apply mt-10 h-20 w-32 font-expletus_sans md:w-80;
+  &-white {
+    @apply h-full w-full py-4 text-white border-2 border-solid border-white text-center text-sm md:py-4 md:text-base xl:text-4xl hover:bg-white hover:text-green-500;
+  }
+}
+
+.cha-header-clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.cha-header-clip {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.text-principal {
+  @apply font-hind_guntur text-sm md:text-base xl:text-lg;
+}
+
+/*.txtshadow {
+  text-shadow: 1px 1px 4px #000000;
+}*/
+
+.encadrement-big {
+  @apply 2xl:container 2xl:mx-auto;
+}
+
+.largeur {
+  @apply px-8 md:px-16 xl:px-64;
+}
+
+.hauteur {
+  @apply py-12 md:py-16 xl:py-24;
+}
+
+/*-------------Carrousel-----------*/
+
+.diapo {
+  position: relative;
+  overflow: hidden;
+}
+
+.elements {
+  display: flex;
+  width: 100%;
+}
+
+.element {
+  flex: 1 0 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.slide {
+  @apply bg-white p-2 md:p-4 lg:p-6 xl:p-7 mx-2 h-4/5 flex items-center justify-center shadow-xl border-b-4 border-solid border-green-500;
+  > img {
+    @apply p-4 md:p-4 lg:p-6 xl:p-7;
+  }
+}
+
+#nav-gauche, #nav-droite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#nav-droite {
+  right: 0;
+}
