@@ -523,8 +523,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-700\/50 {
   background-color: rgb(30 30 30 / 0.5);
 }
-.bg-green-500\/50 {
-  background-color: rgb(70 132 70 / 0.5);
+.bg-gray-700\/70 {
+  background-color: rgb(30 30 30 / 0.7);
 }
 .bg-blue-100 {
   --tw-bg-opacity: 1;
