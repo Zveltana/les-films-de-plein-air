@@ -2,9 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Les films</title>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="images/logo.svg"/>
+
 </head>
 <body>
+<header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28">
+    <div class="largeur flex flex-1 items-center justify-between">
+        <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
+            <nav>
+                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
+                    itemprop="itemListElement">
+                    <li>
+                        <a href="index.html" class="hover:text-green-700">Accueil</a>
+                    </li>
+
+                    <li class="text-green-700">Films</li>
+
+                    <li>
+                        <a href="actualites.html" class="hover:text-green-700">Actualités</a>
+                    </li>
+
+                    <li>
+                        <a href="reservations.html" class="hover:text-green-700">Réservations</a>
+                    </li>
+
+                    <li>
+                        <a href="infos-pratiques.html" class="hover:text-green-700">Infos Pratiques</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-green-700">Contact</a>
+                    </li>
+                </ol>
+            </nav>
+
+            <label for="menu-toggle" class="z-10 block cursor-pointer lg:hidden">
+                <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
+            </label>
+
+            <label for="menu-toggle" class="z-10 hidden cursor-pointer">
+                <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
+            </label>
+        </div>
+
+        <input type="checkbox" class="hidden" id="menu-toggle"/>
+
+        <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu">
+            <nav>
+                <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
+                    <li class="text-green-700">Accueil</li>
+
+                    <li>
+                        <a href="films.html" class="hover:text-green-700">Films</a>
+                    </li>
+
+                    <li>
+                        <a href="actualites.html" class="hover:text-green-700">Actualités</a>
+                    </li>
+
+                    <li>
+                        <a href="reservations.html" class="hover:text-green-700">Réservations</a>
+                    </li>
+
+                    <li>
+                        <a href="infos-pratiques.html" class="hover:text-green-700">Infos Pratiques</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-green-700">Contact</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="relative text-center">
+    <img src="images/header 2.jpg" alt="ghchc">
+    <h1 class="font-expletus_sans font-black absolute text-white text-4xl bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center md:text-6xl xl:text-7xl">
+        Nos Films
+    </h1>
+</section>
 
 </body>
 </html>

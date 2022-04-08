@@ -9,11 +9,11 @@
 
 </head>
 <body>
-<header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white md:h-20 xl:h-28">
+<header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28">
     <div class="largeur flex flex-1 items-center justify-between">
-        <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-center">
+        <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
             <nav>
-                <ol class="hidden list-none txtshadow gap-x-7 text-sm md:flex md:text-base xl:text-lg"
+                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
                     itemprop="itemListElement">
                     <li class="text-green-700">Accueil</li>
 
@@ -39,12 +39,12 @@
                 </ol>
             </nav>
 
-            <label for="menu-toggle" class="z-10 block cursor-pointer md:hidden">
-                <img src="images/burger.svg" alt="icone menu burger"/>
+            <label for="menu-toggle" class="z-10 block cursor-pointer lg:hidden">
+                <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
             </label>
 
             <label for="menu-toggle" class="z-10 hidden cursor-pointer">
-                <img src="images/burger.svg" alt="icone menu burger"/>
+                <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
             </label>
         </div>
 
@@ -53,7 +53,7 @@
         <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu">
             <nav>
                 <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
-                    <li class="text-white">Accueil</li>
+                    <li class="text-green-700">Accueil</li>
 
                     <li>
                         <a href="films.html" class="hover:text-green-700">Films</a>
@@ -82,77 +82,78 @@
 
 <section class="relative text-center">
     <img src="images/header 2.jpg" alt="ghchc">
-    <h1 class="font-expletus_sans font-black absolute text-white text-7xl bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
+    <h1
+            class="font-expletus_sans font-black absolute text-white text-4xl bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center md:text-6xl xl:text-7xl">
         Le Festival
     </h1>
 </section>
 
 <section class="largeur hauteur bg-green-500 text-white relative">
     <div class="cha-header-clip" aria-hidden="true">
-        <header class="fixed left-0 top-0 z-20 flex h-14 w-full items-center text-white text-gray-700 font-expletus_sans md:h-20 xl:h-28 bg-gray-700/50">
+        <header class="fixed left-0 top-0 z-20 flex h-14 w-full items-center text-white font-expletus_sans lg:h-20 xl:h-28 bg-gray-700/90">
             <div class="largeur flex flex-1 items-center justify-between">
-                <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-center">
+                <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
                     <nav>
-                        <ol class="hidden list-none gap-x-7 text-sm md:flex md:text-base xl:text-lg"
+                        <ol class="hidden list-none gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
                             itemprop="itemListElement">
-                            <li class="text-yellow-400">Accueil</li>
+                            <li class="text-green-500">Accueil</li>
 
                             <li>
-                                <a href="films.html" class="hover:text-yellow-400">Films</a>
+                                <a href="films.html" class="hover:text-green-500">Films</a>
                             </li>
 
                             <li>
-                                <a href="actualites.html" class="hover:text-yellow-400">Actualités</a>
+                                <a href="actualites.html" class="hover:text-green-500">Actualités</a>
                             </li>
 
                             <li>
-                                <a href="reservations.html" class="hover:text-yellow-400">Réservations</a>
+                                <a href="reservations.html" class="hover:text-green-500">Réservations</a>
                             </li>
 
                             <li>
-                                <a href="infos-pratiques.html" class="hover:text-yellow-400">Infos Pratiques</a>
+                                <a href="infos-pratiques.html" class="hover:text-green-500">Infos Pratiques</a>
                             </li>
 
                             <li>
-                                <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+                                <a href="contact.html" class="hover:text-green-500">Contact</a>
                             </li>
                         </ol>
                     </nav>
 
-                    <label for="menu-toggle" class="z-10 block cursor-pointer md:hidden">
-                        <img src="images/burger.svg" alt="icone menu burger"/>
+                    <label for="menu-toggle" class="z-10 block cursor-pointer lg:hidden">
+                        <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
                     </label>
 
                     <label for="menu-toggle" class="z-10 hidden cursor-pointer">
-                        <img src="images/burger.svg" alt="icone menu burger"/>
+                        <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
                     </label>
                 </div>
 
-                <input type="checkbox" class="hidden" id="menu-toggle"/>
+                <input type="checkbox" class="hidden" id="menu-toggle-actu"/>
 
-                <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu">
+                <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu-actu">
                     <nav>
                         <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
-                            <li class="text-yellow-400">Accueil</li>
+                            <li class="text-green-500">Accueil</li>
 
                             <li>
-                                <a href="films.html" class="hover:text-yellow-400">Films</a>
+                                <a href="films.html" class="hover:text-green-500">Films</a>
                             </li>
 
                             <li>
-                                <a href="actualites.html" class="hover:text-yellow-400">Actualités</a>
+                                <a href="actualites.html" class="hover:text-green-500">Actualités</a>
                             </li>
 
                             <li>
-                                <a href="reservations.html" class="hover:text-yellow-400">Réservations</a>
+                                <a href="reservations.html" class="hover:text-green-500">Réservations</a>
                             </li>
 
                             <li>
-                                <a href="infos-pratiques.html" class="hover:text-yellow-400">Infos Pratiques</a>
+                                <a href="infos-pratiques.html" class="hover:text-green-500">Infos Pratiques</a>
                             </li>
 
                             <li>
-                                <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+                                <a href="contact.html" class="hover:text-green-500">Contact</a>
                             </li>
                         </ol>
                     </nav>
@@ -160,7 +161,7 @@
             </div>
         </header>
     </div>
-    <div class="flex items-center">
+    <div class="flex flex-col items-center lg:flex-row">
         <div class="mr-4 gap-y-4">
             <h2 class="sous-titre">Actualité</h2>
 
@@ -181,76 +182,76 @@
                 </a>
             </div>
         </div>
-        <img src="images/actualite.jpg" alt="" class="w-2/5">
+        <img src="images/actualite.jpg" alt="" class="pt-20 w-2/4 lg:pt-0 lg:w-2/5">
     </div>
 </section>
 
 <section class="largeur hauteur relative">
     <div class="cha-header-clip" aria-hidden="true">
-        <header class="fixed left-0 top-0 z-20 flex h-14 w-full items-center text-white text-gray-700 font-expletus_sans md:h-20 xl:h-28 bg-gray-700/70">
+        <header class="fixed left-0 top-0 z-20 flex h-14 w-full items-center text-white font-expletus_sans lg:h-20 xl:h-28 bg-green-500">
             <div class="largeur flex flex-1 items-center justify-between">
-                <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-center">
+                <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
                     <nav>
-                        <ol class="hidden list-none gap-x-7 text-sm md:flex md:text-base xl:text-lg"
+                        <ol class="hidden list-none gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
                             itemprop="itemListElement">
-                            <li class="text-yellow-400">Accueil</li>
+                            <li class="text-gray-700">Accueil</li>
 
                             <li>
-                                <a href="films.html" class="hover:text-yellow-400">Films</a>
+                                <a href="films.html" class="hover:text-gray-700">Films</a>
                             </li>
 
                             <li>
-                                <a href="actualites.html" class="hover:text-yellow-400">Actualités</a>
+                                <a href="actualites.html" class="hover:text-gray-700">Actualités</a>
                             </li>
 
                             <li>
-                                <a href="reservations.html" class="hover:text-yellow-400">Réservations</a>
+                                <a href="reservations.html" class="hover:text-gray-700">Réservations</a>
                             </li>
 
                             <li>
-                                <a href="infos-pratiques.html" class="hover:text-yellow-400">Infos Pratiques</a>
+                                <a href="infos-pratiques.html" class="hover:text-gray-700">Infos Pratiques</a>
                             </li>
 
                             <li>
-                                <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+                                <a href="contact.html" class="hover:text-gray-700">Contact</a>
                             </li>
                         </ol>
                     </nav>
 
-                    <label for="menu-toggle" class="z-10 block cursor-pointer md:hidden">
-                        <img src="images/burger.svg" alt="icone menu burger"/>
+                    <label for="menu-toggle" class="z-10 block cursor-pointer lg:hidden">
+                        <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
                     </label>
 
                     <label for="menu-toggle" class="z-10 hidden cursor-pointer">
-                        <img src="images/burger.svg" alt="icone menu burger"/>
+                        <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
                     </label>
                 </div>
 
-                <input type="checkbox" class="hidden" id="menu-toggle"/>
+                <input type="checkbox" class="hidden" id="menu-toggle-film"/>
 
-                <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu">
+                <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu-film">
                     <nav>
                         <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
-                            <li class="text-yellow-400">Accueil</li>
+                            <li class="text-gray-700">Accueil</li>
 
                             <li>
-                                <a href="films.html" class="hover:text-yellow-400">Films</a>
+                                <a href="films.html" class="hover:text-gray-700">Films</a>
                             </li>
 
                             <li>
-                                <a href="actualites.html" class="hover:text-yellow-400">Actualités</a>
+                                <a href="actualites.html" class="hover:text-gray-700">Actualités</a>
                             </li>
 
                             <li>
-                                <a href="reservations.html" class="hover:text-yellow-400">Réservations</a>
+                                <a href="reservations.html" class="hover:text-gray-700">Réservations</a>
                             </li>
 
                             <li>
-                                <a href="infos-pratiques.html" class="hover:text-yellow-400">Infos Pratiques</a>
+                                <a href="infos-pratiques.html" class="hover:text-gray-700">Infos Pratiques</a>
                             </li>
 
                             <li>
-                                <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+                                <a href="contact.html" class="hover:text-gray-700">Contact</a>
                             </li>
                         </ol>
                     </nav>
@@ -263,46 +264,44 @@
             <h1 class="sous-titre text-center">Listes de films</h1>
         </header>
 
-        <div class="">
-            <div class="diapo">
-                <ul class="elements">
-                    <li class="element">
-                        <div class="slide relative">
-                            <img src="images/empereur-de-paris.jpg"
-                                 alt=""
-                                 title="Affiche Film Empereur de Paris"
-                                 class="h-72"/>
-                            <div class="caption">
-                                <h2>L'empereur de Paris</h2>
-                            </div>
+        <div class="diapo">
+            <ul class="elements">
+                <li class="element">
+                    <div class="slide relative">
+                        <img src="images/empereur-de-paris.jpg"
+                             alt=""
+                             title="Affiche Film Empereur de Paris"
+                             class="w-96 h-auto lg:w-auto lg:h-72"/>
+                        <div class="caption">
+                            <h2>L'empereur de Paris</h2>
                         </div>
-                    </li>
+                    </div>
+                </li>
 
-                    <li class="element">
-                        <div class="slide relative">
-                            <img src="images/titanic.jpg"
-                                 alt=""
-                                 title="Affiche Film Titanic"
-                                 class="h-72"/>
-                            <div class="caption">
-                                <h2>Le Titanic</h2>
-                            </div>
+                <li class="element">
+                    <div class="slide relative">
+                        <img src="images/titanic.jpg"
+                             alt=""
+                             title="Affiche Film Titanic"
+                             class="w-96 h-auto lg:w-auto lg:h-72"/>
+                        <div class="caption">
+                            <h2>Le Titanic</h2>
                         </div>
-                    </li>
+                    </div>
+                </li>
 
-                    <li class="element">
-                        <div class="slide relative">
-                            <img src="images/batman.jpg"
-                                 alt=""
-                                 title="Affiche Film Batman"
-                                 class="h-72"/>
-                            <div class="caption">
-                                <h2>Batman</h2>
-                            </div>
+                <li class="element">
+                    <div class="slide relative">
+                        <img src="images/batman.jpg"
+                             alt=""
+                             title="Affiche Film Batman"
+                             class="w-96 h-auto lg:w-auto lg:h-72"/>
+                        <div class="caption">
+                            <h2>Batman</h2>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -313,13 +312,31 @@
     </div>
 </section>
 
-<section class="bg-blue-100 largeur hauteur">
+<section class="bg-gray-700 largeur hauteur">
     <div class="reserve m-auto" title="Cliquez ici pour réserver">
         <a href="#">
             <p class="reserve-white">Réserver</p>
         </a>
     </div>
 </section>
+
+<footer class="bg-gray-700 largeur text-white text-center pb-4 pt-20">
+    <div class="flex justify-between items-center">
+        <a href="index.html">
+            <img src="images/logo-white.svg" alt="" class="w-20 lg:w-28 xl:w-40">
+        </a>
+
+        <div class="flex w-2/5 flex-wrap justify-end lg:flex gap-x-14">
+            <a href="contact.html" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Contact
+            </a>
+
+            <a href="" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Mentions légales</a>
+        </div>
+    </div>
+
+    <p class="pt-10 pb-2 text-base text-white xl:pt-12 xl:text-lg">© 2022 - Films de Plein Air - Tous droits
+        réservés</p>
+</footer>
 
 </body>
 
