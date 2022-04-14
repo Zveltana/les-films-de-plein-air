@@ -33,6 +33,10 @@ module.exports = {
         "50%": "50%",
         "20%": "20%",
       },
+      gridTemplateColumns: {
+        films: "repeat(auto-fit, minmax(18rem, 1fr))",
+        "films-md": "repeat(auto-fit, minmax(17rem, 1fr))",
+      }
     },
   },
   plugins: [],

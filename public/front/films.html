@@ -9,32 +9,32 @@
 
 </head>
 <body>
-<header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28">
+<header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28 bg-green-500">
     <div class="largeur flex flex-1 items-center justify-between">
         <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
             <nav>
                 <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
                     itemprop="itemListElement">
                     <li>
-                        <a href="index.html" class="hover:text-green-700">Accueil</a>
+                        <a href="index.html" class="hover:text-gray-700">Accueil</a>
                     </li>
 
-                    <li class="text-green-700">Films</li>
+                    <li class="text-gray-700">Films</li>
 
                     <li>
-                        <a href="actualites.html" class="hover:text-green-700">Actualités</a>
-                    </li>
-
-                    <li>
-                        <a href="reservations.html" class="hover:text-green-700">Réservations</a>
+                        <a href="actualites.html" class="hover:text-gray-700">Actualités</a>
                     </li>
 
                     <li>
-                        <a href="infos-pratiques.html" class="hover:text-green-700">Infos Pratiques</a>
+                        <a href="reservations.html" class="hover:text-gray-700">Réservations</a>
                     </li>
 
                     <li>
-                        <a href="contact.html" class="hover:text-green-700">Contact</a>
+                        <a href="infos-pratiques.html" class="hover:text-gray-700">Infos Pratiques</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-gray-700">Contact</a>
                     </li>
                 </ol>
             </nav>
@@ -50,29 +50,29 @@
 
         <input type="checkbox" class="hidden" id="menu-toggle"/>
 
-        <div class="absolute top-14 right-0 hidden w-2/4 bg-gray-700" id="menu">
+        <div class="absolute top-14 right-0 hidden w-2/4 bg-green-500" id="menu">
             <nav>
                 <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
-                    <li class="text-green-700">Accueil</li>
+                    <li>
+                        <a href="index.html" class="hover:text-gray-700">Accueil</a>
+                    </li>
+
+                    <li class="text-gray-700">Films</li>
 
                     <li>
-                        <a href="films.html" class="hover:text-green-700">Films</a>
+                        <a href="actualites.html" class="hover:text-gray-700">Actualités</a>
                     </li>
 
                     <li>
-                        <a href="actualites.html" class="hover:text-green-700">Actualités</a>
+                        <a href="reservations.html" class="hover:text-gray-700">Réservations</a>
                     </li>
 
                     <li>
-                        <a href="reservations.html" class="hover:text-green-700">Réservations</a>
+                        <a href="infos-pratiques.html" class="hover:text-gray-700">Infos Pratiques</a>
                     </li>
 
                     <li>
-                        <a href="infos-pratiques.html" class="hover:text-green-700">Infos Pratiques</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="hover:text-green-700">Contact</a>
+                        <a href="contact.html" class="hover:text-gray-700">Contact</a>
                     </li>
                 </ol>
             </nav>
@@ -80,12 +80,100 @@
     </div>
 </header>
 
-<section class="relative text-center">
-    <img src="images/header 2.jpg" alt="ghchc">
-    <h1 class="font-expletus_sans font-black absolute text-white text-4xl bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center md:text-6xl xl:text-7xl">
+<article class="relative text-center">
+    <img src="images/header-film1.jpg" alt="ghchc">
+
+    <h1 class="titre absolute bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
         Nos Films
     </h1>
-</section>
+</article>
+
+<article class="hauteur largeur">
+    <div class="border-l-4 border-solid border-green-500">
+        <h1 class="sous-titre ml-5">Voici les différents films qui seront présent lors du festival</h1>
+
+        <p class="text-principal ml-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam
+            at consectetur deserunt error fugiat fugit ipsam itaque modi nihil, odit omnis optio quisquam
+            Exercitationem, quod.Commodi dolorem eos excepturi explicabo facilis fugiat molestias nesciunt tempore tenetur
+            voluptates. Dolores ea eius laboriosam laborum libero! Aspernatur at dignissimos ea enim excepturi, nesciunt
+            porro sed sint! Doloribus, tempora?
+        </p>
+    </div>
+</article>
+
+<article class="largeur mb-12 md:mb-16 xl:mb-24">
+    <div class="diapo">
+        <ul class="w-full gap-x-10 grid grid-cols-films lg:grid-cols-films-md">
+            <li class="slide relative">
+                <img src="images/empereur-de-paris.jpg"
+                     alt=""
+                     title="Affiche Film Empereur de Paris"
+                     class="h-full w-auto lg:h-72"/>
+                <div class="caption">
+                    <h2>L'empereur de Paris</h2>
+                </div>
+            </li>
+
+            <li class="slide relative">
+                <img src="images/titanic.jpg"
+                     alt=""
+                     title="Affiche Film Titanic"
+                     class="h-full w-auto lg:h-72"/>
+                <div class="caption">
+                    <h2>Le Titanic</h2>
+                </div>
+            </li>
+
+            <li class="slide relative">
+                <img src="images/batman.jpg"
+                     alt=""
+                     title="Affiche Film Batman"
+                     class="h-full w-auto lg:h-72"/>
+                <div class="caption">
+                    <h2>Batman</h2>
+                </div>
+            </li>
+
+            <li class="slide relative">
+                <img src="images/empereur-de-paris.jpg"
+                     alt=""
+                     title="Affiche Film Empereur de Paris"
+                     class="h-full w-auto lg:h-72"/>
+                <div class="caption">
+                    <h2>L'empereur de Paris</h2>
+                </div>
+            </li>
+
+            <li class="slide relative">
+                <img src="images/empereur-de-paris.jpg"
+                     alt=""
+                     title="Affiche Film Empereur de Paris"
+                     class="h-full w-auto lg:h-72"/>
+                <div class="caption">
+                    <h2>L'empereur de Paris</h2>
+                </div>
+            </li>
+        </ul>
+    </div>
+</article>
+
+<footer class="bg-gray-700 largeur text-white text-center pb-4 pt-20">
+    <div class="flex justify-between items-center">
+        <a href="index.html">
+            <img src="images/logo-white.svg" alt="" class="w-20 lg:w-28 xl:w-40">
+        </a>
+
+        <div class="flex w-2/5 flex-wrap justify-end lg:flex gap-x-14">
+            <a href="contact.html" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Contact
+            </a>
+
+            <a href="" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Mentions légales</a>
+        </div>
+    </div>
+
+    <p class="pt-10 pb-2 text-base text-white xl:pt-12 xl:text-lg">© 2022 - Films de Plein Air - Tous droits
+        réservés</p>
+</footer>
 
 </body>
 </html>
