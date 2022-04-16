@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Les films</title>
+    <title>Les réservations</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Le festival Les Films de Plein Air vous accueil pour une nouvelle édition du festival, du 5 au 8 août au parc Monceau">
 
     <link rel="stylesheet" href="app.css">
     <link rel="icon" href="images/logo.svg"/>
 
 </head>
+
 <body>
+
 <header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28 bg-green-500">
     <div class="largeur flex flex-1 items-center justify-between">
         <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
             <nav>
-                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
-                    itemprop="itemListElement">
+                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg">
                     <li>
                         <a href="index.html" class="hover:text-gray-700">Accueil</a>
                     </li>
@@ -24,7 +29,7 @@
                     </li>
 
                     <li>
-                        <a href="films.html" class="hover:text-gray-700">Actualités</a>
+                        <a href="actualites.html" class="hover:text-gray-700">Actualités</a>
                     </li>
 
                     <li class="text-gray-700">Réservations</li>
@@ -52,7 +57,7 @@
 
         <div class="absolute top-14 right-0 hidden w-2/4 bg-green-500" id="menu">
             <nav>
-                <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
+                <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl">
                     <li>
                         <a href="index.html" class="hover:text-gray-700">Accueil</a>
                     </li>
@@ -80,13 +85,97 @@
     </div>
 </header>
 
-<article class="relative text-center">
-    <img src="images/header-actualite.jpg" alt="ghchc">
+<main>
+    <article class="relative text-center">
+        <img src="images/header-reserver.jpg" alt="ghchc">
 
-    <h1 class="titre absolute bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
-        Pour Réserver
-    </h1>
-</article>
+        <h1 class="titre absolute bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
+            Pour Réserver
+        </h1>
+    </article>
+
+    <article class="hauteur largeur">
+        <h1 class="sous-titre">Pour prendre votre place ↓</h1>
+
+        <section class="p-20 bg-gray-100 my-10">
+            <div class="border-l-4 border-solid border-green-500">
+                <h2 class="sous-titre text-center">Réservation pour le Festival Les Films de Plein Air</h2>
+
+                <div class="flex-wrap flex gap-y-5 mb-5 mt-8 justify-between items-center mx-20 lg:flex-nowrap lg:gap-y-0 lg:gap-x-20">
+                    <div class="space-x-5 text-principal lg:space-x-0 4xl:space-x-5">
+                        <label for="pass">Choisir son pass : </label>
+                        <select name="pass" id="pass" class="bg-gray-100 font-semibold text-green-500">
+                            <option value="1">Pass 1 jours</option>
+                            <option value="1">Pass 2 jours</option>
+                            <option value="1">Pass 3 jours</option>
+                            <option value="1">Pass 4 jours</option>
+                        </select>
+                    </div>
+
+                    <div class="space-x-5 text-principal lg:space-x-0 4xl:space-x-5">
+                        <label for="jour">Quel jour ?</label>
+                        <select name="jour" id="jour" class="bg-green-500 text-white">
+                            <option value="1">Choisir le/les jour(s) ---</option>
+                            <option value="2">5 août</option>
+                            <option value="2">6 août</option>
+                            <option value="2">7 août</option>
+                            <option value="2">8 août</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex-wrap flex gap-y-5 justify-between items-center mx-20 lg:flex-nowrap lg:gap-y-0 lg:gap-x-20">
+                    <div class="space-x-5 text-principal lg:space-x-0 4xl:space-x-5">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required class="bg-green-500 text-white"
+                               placeholder="Ecrivez votre nom">
+                    </div>
+
+                    <div class="space-x-5 text-principal lg:space-x-0 4xl:space-x-5">
+                        <label for="number">Nombre de personne :</label>
+                        <select name="number" id="number" class="bg-green-500 text-white">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            <option value="4">7</option>
+                            <option value="4">8</option>
+                            <option value="4">9</option>
+                            <option value="4">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button m-auto mt-5" title="Valider">
+                    <a href="#">
+                        <p class="button-green">Valider</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+
+<footer class="bg-gray-700 largeur text-white text-center pb-4 pt-20">
+    <div class="flex justify-between items-center">
+        <a href="index.html">
+            <img src="images/logo-white.svg" alt="" class="w-20 lg:w-28 xl:w-40">
+        </a>
+
+        <div class="flex w-2/5 flex-wrap justify-end lg:flex gap-x-14">
+            <a href="contact.html" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Contact
+            </a>
+
+            <a href="" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Mentions légales</a>
+        </div>
+    </div>
+
+    <p class="pt-10 pb-2 text-base text-white xl:pt-12 xl:text-lg">© 2022 - Films de Plein Air - Tous droits
+        réservés</p>
+</footer>
 
 </body>
+
 </html>

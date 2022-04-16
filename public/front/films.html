@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <title>Les films</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Le festival Les Films de Plein Air vous accueil pour une nouvelle édition du festival, du 5 au 8 août au parc Monceau">
+
     <link rel="stylesheet" href="app.css">
     <link rel="icon" href="images/logo.svg"/>
 
 </head>
+
 <body>
+
 <header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28 bg-green-500">
     <div class="largeur flex flex-1 items-center justify-between">
         <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
             <nav>
-                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg"
-                    itemprop="itemListElement">
+                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg">
                     <li>
                         <a href="index.html" class="hover:text-gray-700">Accueil</a>
                     </li>
@@ -52,7 +57,7 @@
 
         <div class="absolute top-14 right-0 hidden w-2/4 bg-green-500" id="menu">
             <nav>
-                <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl" itemprop="itemListElement">
+                <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl">
                     <li>
                         <a href="index.html" class="hover:text-gray-700">Accueil</a>
                     </li>
@@ -80,82 +85,84 @@
     </div>
 </header>
 
-<article class="relative text-center">
-    <img src="images/header-film1.jpg" alt="ghchc">
+<main>
+    <article class="relative text-center">
+        <img src="images/header-film1.jpg" alt="ghchc">
 
-    <h1 class="titre absolute bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
-        Nos Films
-    </h1>
-</article>
+        <h1 class="titre absolute bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
+            Nos Films
+        </h1>
+    </article>
 
-<article class="hauteur largeur">
-    <div class="border-l-4 border-solid border-green-500">
-        <h1 class="sous-titre ml-5">Voici les différents films qui seront présent lors du festival</h1>
+    <article class="hauteur largeur">
+        <div class="border-l-4 border-solid border-green-500">
+            <h1 class="sous-titre ml-5">Voici les différents films qui seront présent lors du festival</h1>
 
-        <p class="text-principal ml-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam
-            at consectetur deserunt error fugiat fugit ipsam itaque modi nihil, odit omnis optio quisquam
-            Exercitationem, quod.Commodi dolorem eos excepturi explicabo facilis fugiat molestias nesciunt tempore tenetur
-            voluptates. Dolores ea eius laboriosam laborum libero! Aspernatur at dignissimos ea enim excepturi, nesciunt
-            porro sed sint! Doloribus, tempora?
-        </p>
-    </div>
-</article>
+            <p class="text-principal ml-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam
+                at consectetur deserunt error fugiat fugit ipsam itaque modi nihil, odit omnis optio quisquam
+                Exercitationem, quod.Commodi dolorem eos excepturi explicabo facilis fugiat molestias nesciunt tempore tenetur
+                voluptates. Dolores ea eius laboriosam laborum libero! Aspernatur at dignissimos ea enim excepturi, nesciunt
+                porro sed sint! Doloribus, tempora?
+            </p>
+        </div>
+    </article>
 
-<article class="largeur mb-12 md:mb-16 xl:mb-24">
-    <div class="diapo">
-        <ul class="w-full gap-x-10 grid grid-cols-films lg:grid-cols-films-md">
-            <li class="slide relative">
-                <img src="images/empereur-de-paris.jpg"
-                     alt=""
-                     title="Affiche Film Empereur de Paris"
-                     class="h-full w-auto lg:h-72"/>
-                <div class="caption">
-                    <h2>L'empereur de Paris</h2>
-                </div>
-            </li>
+    <article class="largeur mb-12 md:mb-16 xl:mb-24">
+        <div class="diapo">
+            <ul class="w-full gap-x-10 grid grid-cols-films lg:grid-cols-films-md">
+                <li class="slide relative">
+                    <img src="images/empereur-de-paris.jpg"
+                         alt=""
+                         title="Affiche Film Empereur de Paris"
+                         class="h-full w-auto lg:h-72"/>
+                    <div class="caption">
+                        <h2>L'empereur de Paris</h2>
+                    </div>
+                </li>
 
-            <li class="slide relative">
-                <img src="images/titanic.jpg"
-                     alt=""
-                     title="Affiche Film Titanic"
-                     class="h-full w-auto lg:h-72"/>
-                <div class="caption">
-                    <h2>Le Titanic</h2>
-                </div>
-            </li>
+                <li class="slide relative">
+                    <img src="images/titanic.jpg"
+                         alt=""
+                         title="Affiche Film Titanic"
+                         class="h-full w-auto lg:h-72"/>
+                    <div class="caption">
+                        <h2>Le Titanic</h2>
+                    </div>
+                </li>
 
-            <li class="slide relative">
-                <img src="images/batman.jpg"
-                     alt=""
-                     title="Affiche Film Batman"
-                     class="h-full w-auto lg:h-72"/>
-                <div class="caption">
-                    <h2>Batman</h2>
-                </div>
-            </li>
+                <li class="slide relative">
+                    <img src="images/batman.jpg"
+                         alt=""
+                         title="Affiche Film Batman"
+                         class="h-full w-auto lg:h-72"/>
+                    <div class="caption">
+                        <h2>Batman</h2>
+                    </div>
+                </li>
 
-            <li class="slide relative">
-                <img src="images/empereur-de-paris.jpg"
-                     alt=""
-                     title="Affiche Film Empereur de Paris"
-                     class="h-full w-auto lg:h-72"/>
-                <div class="caption">
-                    <h2>L'empereur de Paris</h2>
-                </div>
-            </li>
+                <li class="slide relative">
+                    <img src="images/empereur-de-paris.jpg"
+                         alt=""
+                         title="Affiche Film Empereur de Paris"
+                         class="h-full w-auto lg:h-72"/>
+                    <div class="caption">
+                        <h2>L'empereur de Paris</h2>
+                    </div>
+                </li>
 
-            <li class="slide relative">
-                <img src="images/empereur-de-paris.jpg"
-                     alt=""
-                     title="Affiche Film Empereur de Paris"
-                     class="h-full w-auto lg:h-72"/>
-                <div class="caption">
-                    <h2>L'empereur de Paris</h2>
-                </div>
-            </li>
-        </ul>
-    </div>
-</article>
+                <li class="slide relative">
+                    <img src="images/empereur-de-paris.jpg"
+                         alt=""
+                         title="Affiche Film Empereur de Paris"
+                         class="h-full w-auto lg:h-72"/>
+                    <div class="caption">
+                        <h2>L'empereur de Paris</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+</main>
 
 <footer class="bg-gray-700 largeur text-white text-center pb-4 pt-20">
     <div class="flex justify-between items-center">
@@ -176,4 +183,5 @@
 </footer>
 
 </body>
+
 </html>

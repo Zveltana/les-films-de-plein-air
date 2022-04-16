@@ -2,9 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Infos Pratiques</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Le festival Les Films de Plein Air vous accueil pour une nouvelle édition du festival, du 5 au 8 août au parc Monceau">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="images/logo.svg"/>
+
 </head>
+
 <body>
 
+<header class="fixed top-0 z-20 flex h-14 w-full items-center font-expletus_sans text-white lg:h-20 xl:h-28 bg-green-500">
+    <div class="largeur flex flex-1 items-center justify-between">
+        <div class="2xl:container 2xl:mx-auto flex flex-1 items-center justify-end lg:justify-center">
+            <nav>
+                <ol class="hidden list-none txtshadow gap-x-7 text-sm lg:flex lg:text-base xl:text-lg">
+                    <li>
+                        <a href="index.html" class="hover:text-gray-700">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="films.html" class="hover:text-gray-700">Films</a>
+                    </li>
+
+                    <li>
+                        <a href="actualites.html" class="hover:text-gray-700">Actualités</a>
+                    </li>
+
+                    <li>
+                        <a href="reservations.html" class="hover:text-gray-700">Réservations</a>
+                    </li>
+
+                    <li class="text-gray-700">Infos Pratiques</li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-gray-700">Contact</a>
+                    </li>
+                </ol>
+            </nav>
+
+            <label for="menu-toggle" class="z-10 block cursor-pointer lg:hidden">
+                <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
+            </label>
+
+            <label for="menu-toggle" class="z-10 hidden cursor-pointer">
+                <img src="images/burger.svg" alt="icone menu burger" class="w-10"/>
+            </label>
+        </div>
+
+        <input type="checkbox" class="hidden" id="menu-toggle"/>
+
+        <div class="absolute top-14 right-0 hidden w-2/4 bg-green-500" id="menu">
+            <nav>
+                <ol class="flex w-full list-none flex-col gap-y-4 py-8 text-center text-xl">
+                    <li>
+                        <a href="index.html" class="hover:text-gray-700">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="films.html" class="hover:text-gray-700">Films</a>
+                    </li>
+
+                    <li class="text-gray-700">Actualités</li>
+
+                    <li>
+                        <a href="reservations.html" class="hover:text-gray-700">Réservations</a>
+                    </li>
+
+                    <li class="text-gray-700">Infos Pratiques</li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-gray-700">Contact</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <article class="relative text-center">
+        <img src="images/header-infos-pratiques.jpg" alt="ghchc">
+
+        <h1 class="titre absolute bg-logo bg-no-repeat bg-center bg-20% h-full w-full top-0 flex justify-center items-center">
+            Infos Pratiques
+        </h1>
+    </article>
+
+    <article class="hauteur largeur">
+        <div class="border-l-4 border-solid border-green-500">
+            <h1 class="sous-titre text-green-500 ml-5">Les Films de Plein Air</h1>
+
+            <div class="flex gap-x-3 ml-5">
+                <h2 class="sous-titre">Date :</h2>
+
+                <p class="text-principal">Du 5 au 8 août</p>
+            </div>
+
+            <div class="flex gap-x-3 ml-5">
+                <h2 class="sous-titre">Lieu :</h2>
+
+                <p class="text-principal">Au parc Monceau</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="hauteur largeur bg-green-500 flex flex-col items-center">
+        <h1 class="sous-titre text-center text-white">Maps</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873738208825!2d2.3067609515618734!3d48.87968347918803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1650038098233!5m2!1sfr!2sfr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+
+    <article class="largeur hauteur">
+        <h1 class="sous-titre text-green-500">Règles</h1>
+
+        <p class="text-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto autem beatae earum eum,
+            exercitationem fugit iusto natus nemo, nihil odio officiis perferendis, perspiciatis provident rem sint totam. Asperiores.
+        </p>
+    </article>
+</main>
+
+<footer class="bg-gray-700 largeur text-white text-center pb-4 pt-20">
+    <div class="flex justify-between items-center">
+        <a href="index.html">
+            <img src="images/logo-white.svg" alt="" class="w-20 lg:w-28 xl:w-40">
+        </a>
+
+        <div class="flex w-2/5 flex-wrap justify-end lg:flex gap-x-14">
+            <a href="contact.html" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Contact
+            </a>
+
+            <a href="" class="text-base hover:text-green-700 lg:text-base xl:text-lg">Mentions légales</a>
+        </div>
+    </div>
+
+    <p class="pt-10 pb-2 text-base text-white xl:pt-12 xl:text-lg">© 2022 - Films de Plein Air - Tous droits
+        réservés</p>
+</footer>
+
 </body>
+
 </html>

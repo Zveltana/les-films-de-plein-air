@@ -36,7 +36,16 @@ module.exports = {
       gridTemplateColumns: {
         films: "repeat(auto-fit, minmax(18rem, 1fr))",
         "films-md": "repeat(auto-fit, minmax(17rem, 1fr))",
-      }
+      },
+      screens: {
+        "xxl": "1700px",
+        "3xl": "1275px",
+        "4xl": "1580px",
+        "5xl": "1710px",
+        "2xxl": "2000px",
+        "3xxl": "2460px",
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   plugins: [],
